@@ -1,0 +1,43 @@
+.wrapper {
+  width: 239px;
+  height: 143px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.5em;
+  border: 1px solid black;
+
+  .username {
+    font-family: Open Sans;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .city {
+    color: rgba(0, 0, 0, 0.41);
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+  }
+
+  .clickButton {
+    width: 148px;
+    height: 35px;
+    background: #101010;
+    border: 1px solid #0d1e4b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    color: #ffffff;
+  }
+}

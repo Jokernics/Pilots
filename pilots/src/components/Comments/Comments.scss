@@ -1,0 +1,25 @@
+.comments-wrapper {
+  padding-top: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: .3em 0;
+  align-items: center;
+  .comment-wrapper {
+    border: 1px solid black;
+    padding: 1em;
+    width: 90%;
+
+    .user-information {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  p {
+    margin-top: .5em;
+  }
+
+  button {
+    padding: 1em;
+  }
+}

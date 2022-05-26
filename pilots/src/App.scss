@@ -1,0 +1,332 @@
+/* @font-face {
+  font-family: 'Alegreya Sans SC';
+  src: url("./assets/fonts/AlegreyaSansSC-Bold.ttf") format('ttf');
+} */
+@import-normalize;
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("./assets/fonts/ProximaNovaExCn-Bold.ttf") format("ttf");
+}
+
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h2 {
+  font-family: Alegreya Sans SC;
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  background: #101010;
+  border: 1px solid #0d1e4b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  color: #ffffff;
+  padding: 1em;
+}
+.app-wrapper {
+  max-width: 1116px;
+}
+
+.slider-wrapper {
+  height: 440px;
+  background: url(./assets/images/logo.png) no-repeat center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+
+  .slider-headline {
+    background: radial-gradient(
+      50% 50% at 50% 50%,
+      #000000 0%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    width: 593px;
+    height: 156px;
+    left: 261px;
+    top: 238px;
+  }
+  h2 {
+    font-family: Alegreya Sans SC;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  h4 {
+    font-family: Alegreya Sans SC;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #ffffff;
+  }
+}
+
+.main-container {
+  padding: 31px 3em 38px 3em;
+
+  .history {
+    width: 100%;
+
+    .history-top {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .users-container {
+      margin-top: 16px;
+    }
+  }
+
+  .about-wrapper {
+    margin-top: 47px;
+    height: 272px;
+    display: flex;
+    justify-content: space-between;
+
+    .descripton-wrapper {
+      display: flex;
+      flex-direction: column;
+      max-width: 40%;
+
+      h2 {
+        font-family: Alegreya Sans SC;
+        font-size: 35px;
+        font-weight: 500;
+        line-height: 40px;
+        text-align: left;
+      }
+
+      .about-description {
+        padding-left: 42px;
+        direction: rtl;
+        overflow-y: auto;
+        margin-top: 15px;
+
+        & > * {
+          direction: ltr;
+        }
+
+        &::-webkit-scrollbar-track {
+          border: 5px solid white;
+          // border color does not support transparent on scrollbar
+          // border-color: transparent;
+          background-color: #b2bec3;
+        }
+
+        &::-webkit-scrollbar {
+          width: 13px;
+          background-color: #dfe6e9;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          background-color: #0d1e4b;
+        }
+        h3 {
+          font-family: Open Sans;
+          font-size: 15px;
+          font-weight: 700;
+          line-height: 20px;
+          text-align: left;
+        }
+
+        p {
+          margin-top: 10px;
+          font-family: Open Sans;
+          font-size: 14px;
+          font-weight: 600;
+          line-height: 24px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: #939393;
+          margin-right: 2px;
+        }
+      }
+    }
+  }
+
+  form {
+    max-width: 559px;
+    width: 100%;
+    border: 1px solid #dadada;
+    padding: 13px 25px 25px 25px;
+
+    h2 {
+      font-family: Open Sans;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 40px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+
+    textarea {
+      resize: none;
+      padding: 10px 20px;
+      margin-top: 9px;
+      font-family: Open Sans;
+      font-size: 11px;
+      font-weight: 600;
+      line-height: 15px;
+      letter-spacing: 0em;
+      text-align: left;
+      max-width: 509px;
+      width: 100%;
+      height: 134px;
+    }
+
+    button {
+      margin-top: 16px;
+      width: 101px;
+      height: 35px;
+      margin-left: auto;
+    }
+  }
+
+  .about-group {
+    display: flex;
+    margin-top: 63px;
+
+    h2 {
+      width: 40%;
+    }
+
+    p {
+      font-family: Open Sans;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #939393;
+    }
+  }
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  margin-top: 2em;
+
+  h2,
+  h4,
+  p {
+    padding: 0.3em;
+  }
+
+  .username-wrapper {
+    display: flex;
+    padding: 0 3em;
+
+    h2 {
+      border-left: 1px solid black;
+      margin-right: auto;
+      font-family: Alegreya Sans SC;
+      font-size: 35px;
+      font-weight: 500;
+      line-height: 40px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+
+    button:nth-last-child(2) {
+      margin-right: 0.2em;
+    }
+  }
+
+  .information-wrapper {
+    padding: 0 3em;
+    display: flex;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+
+    h4 {
+      border-right: 1px solid black;
+
+      &:first-child {
+        border-left: 1px solid #000;
+      }
+      &:last-child {
+        flex-grow: 2;
+      }
+    }
+  }
+
+  .posts-wrapper {
+    padding: 0 3em;
+    padding-bottom: 1em;
+    margin-top: 2em;
+    border-top: 1px solid #000;
+  }
+
+  .publications-wrapper {
+    padding: 0 3em;
+    padding-bottom: 1em;
+    margin-top: 2em;
+    border-top: 1px solid #000;
+  }
+}
+
+.posts_page-wrapper {
+  padding: 2em;
+  padding-top: 0;
+}
+
+.search-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 0;
+
+  input {
+    width: 20em;
+    height: 2em;
+    padding: 0.23em;
+  }
+}
+
+.post-wrapper {
+  padding: 0.5em;
+}
+
+.comment-button {
+  padding: 1em;
+  margin: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.post_id-page-wrapper {
+  padding-bottom: 10em;
+}
